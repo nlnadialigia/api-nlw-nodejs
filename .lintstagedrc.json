@@ -1,6 +1,6 @@
 
 {
   "*.ts": [
-    "yarn lint"
+    "eslint . --fix"
   ]
 }

@@ -1,13 +1,3 @@
-import express from 'express';
-import 'reflect-metadata';
-import './database';
-import { router } from './routes';
+import { app } from './app';
 
-const app = express();
-
-app.use(express.json());
-app.use(router);
-
-app.listen(3080, () => {
-  console.log('Server is running!');
-});
+app.listen(3090, () => console.log('Server is running!'));

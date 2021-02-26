@@ -13,9 +13,9 @@ class Survey {
   description: string;
 
   @CreateDateColumn()
-  created_at: Date
+  created_at: Date;
 
-  constructor () {
+  constructor() {
     if (!this.id) {
       this.id = uuid();
     }

@@ -24,6 +24,7 @@
     "@typescript-eslint/no-misused-promises": "off",
     "@typescript-eslint/no-namespace": "off",
     "import/export": "off",
+    "space-before-function-paren":"off",
     "no-undef":"off",
     "semi": [
       "error",

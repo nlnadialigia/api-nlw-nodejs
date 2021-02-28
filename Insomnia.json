@@ -1,0 +1,259 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2021-02-28T18:38:12.936Z",
+  "__export_source": "insomnia.desktop.app:v2020.5.2",
+  "resources": [
+    {
+      "_id": "req_84a30055d8ec47b2add8d5d7e01e6237",
+      "parentId": "fld_ac6efdf55f4c478f88d3948e61152ccd",
+      "modified": 1614395016518,
+      "created": 1614394813090,
+      "url": "{{ _.base_url }}/nps/c5670dde-2231-4b31-b42d-aa9a7c001838",
+      "name": "Calcuate",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1614394813156,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_ac6efdf55f4c478f88d3948e61152ccd",
+      "parentId": "wrk_564de29b6b224444b729304a843b812c",
+      "modified": 1614394800890,
+      "created": 1614394800890,
+      "name": "NPS",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1614394800890,
+      "_type": "request_group"
+    },
+    {
+      "_id": "wrk_564de29b6b224444b729304a843b812c",
+      "parentId": null,
+      "modified": 1614348910135,
+      "created": 1614348910135,
+      "name": "NLW4-API",
+      "description": "",
+      "scope": null,
+      "_type": "workspace"
+    },
+    {
+      "_id": "req_bcf428cae09246f98b82193679453fa5",
+      "parentId": "fld_62ec6847b5184f6cb0dbac831b56fbe2",
+      "modified": 1614395279192,
+      "created": 1614352861665,
+      "url": "{{ _.base_url }}/sendMail",
+      "name": "Send",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"email\": \"email2@email.com.br\",\n\t\"survey_id\": \"c5670dde-2231-4b31-b42d-aa9a7c001838\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_b882d093535d46e18793d90ba1c21eff"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1614352861665,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_62ec6847b5184f6cb0dbac831b56fbe2",
+      "parentId": "wrk_564de29b6b224444b729304a843b812c",
+      "modified": 1614352921700,
+      "created": 1614350271682,
+      "name": "SEND MAIL",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1614350271682,
+      "_type": "request_group"
+    },
+    {
+      "_id": "req_279ca63463e54f848cd5e974bf95a17e",
+      "parentId": "fld_b5e8487f04cd4d5d803f13855280b343",
+      "modified": 1614350228965,
+      "created": 1614350082315,
+      "url": "{{ _.base_url }}/surveys",
+      "name": "Create",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"title\": \"Avalie o seu instrutor\",\n\t\"description\": \"De 0 a 10, quão didático foi seu instrutor(a) na NLW4\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_3ee8c4a90d9b4a8b930c49c346ab711b"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1614350082315,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_b5e8487f04cd4d5d803f13855280b343",
+      "parentId": "wrk_564de29b6b224444b729304a843b812c",
+      "modified": 1614350069315,
+      "created": 1614350069315,
+      "name": "SURVEY",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1614350069315,
+      "_type": "request_group"
+    },
+    {
+      "_id": "req_5d260d5e93de4c399593e281f0d460f0",
+      "parentId": "fld_b5e8487f04cd4d5d803f13855280b343",
+      "modified": 1614350253804,
+      "created": 1614350247970,
+      "url": "{{ _.base_url }}/surveys",
+      "name": "Show",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1614349536348.5,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_320c9488ed4b4d55bf7c47fc3d1ed0d8",
+      "parentId": "fld_dbdef22f615f45aa94f8332295d28f19",
+      "modified": 1614396269492,
+      "created": 1614348990382,
+      "url": "{{ _.base_url }}/users",
+      "name": "Create",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"name\": \"Lucas Gabriel\",\n\t\"email\": \"email6@email.com.br\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_f0b6bb6c126141e0bac1580a389edd59"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1614348990382,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_dbdef22f615f45aa94f8332295d28f19",
+      "parentId": "wrk_564de29b6b224444b729304a843b812c",
+      "modified": 1614348980181,
+      "created": 1614348980181,
+      "name": "USER",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1614348980181,
+      "_type": "request_group"
+    },
+    {
+      "_id": "env_3d71e82551e8ff284204ca13db814d5f3772eea2",
+      "parentId": "wrk_564de29b6b224444b729304a843b812c",
+      "modified": 1614348910454,
+      "created": 1614348910454,
+      "name": "Base Environment",
+      "data": {},
+      "dataPropertyOrder": null,
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1614348910454,
+      "_type": "environment"
+    },
+    {
+      "_id": "jar_3d71e82551e8ff284204ca13db814d5f3772eea2",
+      "parentId": "wrk_564de29b6b224444b729304a843b812c",
+      "modified": 1614348910460,
+      "created": 1614348910460,
+      "name": "Default Jar",
+      "cookies": [],
+      "_type": "cookie_jar"
+    },
+    {
+      "_id": "spc_b09f102ef5b94c3ab5ae14d092e38bcd",
+      "parentId": "wrk_564de29b6b224444b729304a843b812c",
+      "modified": 1614348910139,
+      "created": 1614348910139,
+      "fileName": "NLW4-API",
+      "contents": "",
+      "contentType": "yaml",
+      "_type": "api_spec"
+    },
+    {
+      "_id": "env_71822b6302db4b228b6430ad43228379",
+      "parentId": "env_3d71e82551e8ff284204ca13db814d5f3772eea2",
+      "modified": 1614349998261,
+      "created": 1614348935864,
+      "name": "dev",
+      "data": {
+        "base_url": "http://localhost:3090"
+      },
+      "dataPropertyOrder": {
+        "&": [
+          "base_url"
+        ]
+      },
+      "color": "#e00b0b",
+      "isPrivate": false,
+      "metaSortKey": 1614348935864,
+      "_type": "environment"
+    }
+  ]
+}

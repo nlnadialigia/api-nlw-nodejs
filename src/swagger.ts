@@ -77,10 +77,7 @@ export const swaggerDocument =
         ],
         responses: {
           200: {
-            description: 'Sucessful operation',
-            schema: {
-              $ref: '#/definitions/Surveys'
-            }
+            description: 'Sucessful operation'
           },
           400: {
             description: 'Error ocurred'
@@ -165,10 +162,7 @@ export const swaggerDocument =
         ],
         responses: {
           200: {
-            description: 'Sucessful operation',
-            schema: {
-              $ref: '#/definitions/Nps'
-            }
+            description: 'Sucessful operation'
           },
           400: {
             description: 'Error ocurred'
@@ -194,10 +188,6 @@ export const swaggerDocument =
     Surveys: {
       type: 'object',
       properties: {
-        id: {
-          type: 'string',
-          format: 'uuid'
-        },
         title: {
           type: 'string',
           example: 'Queremos saber sua opinião'
@@ -205,10 +195,6 @@ export const swaggerDocument =
         description: {
           type: 'string',
           example: 'Como você classifica o conteúdo da NLW4'
-        },
-        created_at: {
-          type: 'string',
-          format: 'date'
         }
       }
     },

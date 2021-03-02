@@ -57,6 +57,8 @@ O projeto consiste em uma API de NPS (Net Promoter Score), com sistema de cadast
 
 ⚡ Quando do envio de email pelo endpoint SendMail é criado um link, que aparecerá no terminal. Clique nele e verá o email enviado. 
 
+⚡ Como alternativa foi criada a documentação no Postman com exemplos dos endpoints. [Link](https://documenter.getpostman.com/view/14773197/TWDfBrxo)
+
 <br>
 <p align="center">
   <img src="./assets/sendMail.gif">
